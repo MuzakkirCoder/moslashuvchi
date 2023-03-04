@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #00000047;
+			height: 100vh;
+		}
+.loader-box{
+	width: 300px; 
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader-box .loader{
+	width: 300px;
+	height: 300px;
+	border-top:5px dashed blue;
+	border-bottom: 5px dotted red;
+
+
+
+<img src="https://avatars.mds.yandex.net/i?id=4ea70e8f34059c2ca396f62520d98e74_l-5169643-images-thumbs&n=13" 
+		alt="">
+
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	animation-name: loader;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+
+}
+
+.loader-box h1{
+	position: absolute;
+	animation-name: text;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	text-shadow: 1px 1px 2px red;
+}
+
+@keyframes text {
+
+	from{
+		color: orange;
+	}
+	to{
+		color: red;
+
+	}
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="loader-box">
+		<div class="loader"></div>
+		<h1>LOADING....</h1>
+	</div>
+</body>
+</html>
